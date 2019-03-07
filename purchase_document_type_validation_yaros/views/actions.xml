@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+         <record id="sale_document_type_action" model="ir.actions.act_window">
+            <field name="name">Tipo Comprobante Pago</field>
+            <field name="res_model">sale.document.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+         </record>
+    </data>
+</odoo>
