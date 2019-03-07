@@ -45,23 +45,4 @@ class AccountInvoice(models.Model):
 
     _inherit = 'account.invoice'
 
-    @api.onchange('partner_id', 'company_id', 'journal_id', 'currency_id')
-    def _onchange_partner_id(self):
-        self.account_id = False
-        if self.journal_id and self.currency_id:
-            account_change = self.env['account.change.by.type'].search([
-                ('journal_id', '=', self.journal_id.id),
-                ('currency_id', '=', self.currency_id.id)
-            ], limit=1)
-            if account_change:
-                if self.type == 'out_invoice':
-                    self.account_id = account_change.sale_account_id.id
-                elif self.type == 'in_invoice':
-                    self.account_id = account_change.purchase_account_id.id
-        if not self.account_id:
-            return super(AccountInvoice, self)._onchange_partner_id()
-
-    @api.multi
-    def action_invoice_open(self):
-        self._onchange_partner_id()
-        return super(AccountInvoice, self).action_invoice_open()
+    document = fields.Many2one(comodel_name='account.change.by.type')
