@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="sale_document_type_menu"
+                  name="Document Type"
+                  parent="account.account_account_menu"
+                  groups="account.group_account_manager"
+                  action="sale_document_type_action"
+        />
+    </data>
+</odoo>
+
+
+
