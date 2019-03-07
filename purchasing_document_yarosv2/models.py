@@ -199,17 +199,3 @@ class AccountInvoice(models.Model):
     def _onchange_partner_id_type_document_id(self):
         if self.partner_id and self.partner_id.type_document_id:
             self.type_document_id = self.partner_id.type_document_id
-
-
-class ResPartner(models.Model):
-
-    _inherit = 'res.partner'
-
-    type_document_id = fields.Many2one(
-        comodel_name='sale.document.type',
-        string='Documento de compra por defecto'
-    )
-
-    @api.onchange('supplier')
-    def _onchange_supplier_type_document_id(self):
-        self.type_document_id = False

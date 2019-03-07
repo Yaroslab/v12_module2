@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Que su referencia del proveedor sea estructurada',
+    'name': 'purchasing_document_yarosv2',
     'version': '2.0',
     'category': 'Account',
     'author': 'YarosLab SAC',

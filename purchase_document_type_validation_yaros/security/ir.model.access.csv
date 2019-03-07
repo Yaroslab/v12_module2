@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-
-access_sale_document_type_all_users,sale_document_type,model_sale_document_type,,1,0,0,0
-access_sale_document_type_account_manager,sale_document_type,model_sale_document_type,account.group_account_manager,1,1,1,1
-
-
