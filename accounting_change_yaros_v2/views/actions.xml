@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_change_by_type_action" model="ir.actions.act_window">
+            <field name="name">Cambio Cuenta</field>
+            <field name="res_model">account.change.by.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="account_change_by_type_view_tree"/>
+        </record>
+    </data>
+</odoo>

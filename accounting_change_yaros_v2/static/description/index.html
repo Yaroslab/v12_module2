@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <div id="wrap" class="oe_structure oe_empty" data-oe-model="ir.ui.view" data-oe-id="1865" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]">
+      <section class="pt32 pb32">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+              <h1 class="s_title_default">
+                <font style="font-size: 62px;">ACCOUNTINGCHANGEYAROS</font>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_image pt32 pb32">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="pt16 pb16 col-lg-3">
+              <h2>Qué hace Odoo nativo?</h2>
+              <p>Cuando se crea una factura o nota de crédito de cliente o proveedor, Odoo completa el campo que guarda la cuenta por cobrar y pagar, con la cuenta que se encuentra configurada en el cliente o proveedor (partner).<br></p>
+              <p>En la imagen de la derecha, el campo "cuenta", se ha completado con el valor "1212.01", porque el cliente "CIMACOM", tiene configurada esa cuenta, como "Cuenta por cobrar", esto lo podríamos verificar si ingresamos a la vista formulario de ese cliente.</p>
+            </div>
+            <div class="pt16 pb16 col-lg-9">
+              <img src="img1.png" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip967756">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt32 pb32">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-lg-12 s_title pt16 pb16" style="text-align: center;">
+              <h1 class="s_title_default">
+                <font style="font-size: 62px;">¿Por qué modificar esta lógica nativa de Odoo?</font>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt32 pb32">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 pt32 pb32">
+              <p class="lead">La lógica que usa odoo para completar la cuenta por defecto, es que el Partner (Cliente - proveedor), es el que determina la cuenta por cobrar o pagar a ser utilizada. Esto puede que sea cierto, o de aplicación en algunos países, sin embargo, en otros países, como Perú y Colombia, por ejemplo, es la moneda y el tipo de comprobante el que determina la cuenta a utilizar.&nbsp;&nbsp;</p>
+              <p><b>¿Qué pasa si a un cliente se le vende en soles y en dolares?.</b> Esta es una figura que nos permite comprender por qué no es factible que un partner use solo una cuenta, porque si se le vende en soles, debe tener una cuenta por cobrar configurada en esa moneda (PEN), pero cuando se le venda en dolares deberá tener una cuenta con divisa secundaria dolares (USD).</p>
+              <p><b>¿Qué pasa si a un mismo partner, se le vende con comprobantes diferentes?.</b> En este caso, al igual que el anterior, si el plan contable de tu país, establece una cuenta diferente por tipo de comprobante, deberás cambiar la cuenta contable, según el comprobante que estés utilizando.</p>
+              <p>Como vemos, son muchos los casos, en los que la cuenta contable por cobrar y pagar, están sujetas a varias variables, y no son definidas por el Partner.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_image pt32 pb32">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="pt16 pb16 col-lg-8">
+              <img src="img2.png" class="img img-fluid mx-auto" alt="Odoo • Image and Text" data-original-title="" title="" aria-describedby="tooltip983697">
+            </div>
+            <div class="pt16 pb16 col-lg-4">
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_call_to_action bg-200 pt48 pb24">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 pb24">
+              <h3 style="color: rgb(33, 37, 41);"><span style="font-weight: bolder;">100+ compañías y 700+ usuarios,</span>&nbsp;gestionan su negocio con Odoo administrado por&nbsp;<span style="font-weight: bolder;">Yaroslab.</span></h3>
+              <h3 style="color: rgb(33, 37, 41);"></h3>
+              <h3></h3>
+              <div class="s_card card bg-white w-100">
+                <h4 class="card-header" style="color: rgb(33, 37, 41);">Datos de contacto con el área comercial</h4>
+                <div class="card-body">
+                </div>
+                <div class="card-footer">
+                  <i class="fa fa-1x fa-clock-o mr8"></i>
+                  <span style="font-size: 11.2px;">Guaranted</span>
+                  <br>
+                </div>
+              </div>
+              <div class="s_card card bg-white w-100">
+                <h4 class="card-header" style="color: rgb(33, 37, 41);">Datos de contacto con el área de Soporte</h4>
+                <div class="card-body">
+                </div>
+                <div class="card-footer">
+                  <i class="fa fa-1x fa-clock-o mr8"></i>
+                  <span style="font-size: 11.2px;">Guaranted</span>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 s_btn text-right pt8 pb24">
+              <a href="https://www.yaroscloud.com/contactus" class="btn btn-primary btn-lg">
+                <span>Contáctanos</span>
+                <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_faq_collapse pt48 pb32">
+        <div class="container">
+          <div class="row s_nb_column_fixed">
+            <div class="col-lg-12 s_title pt16 pb16">
+            </div>
+          </div>
+          <div class="row s_col_no_bgcolor">
+            <div class="col-lg-12 pt16 pb16">
+              <div id="myCollapse" class="accordion" role="tablist">
+                <div class="card bg-white">
+                  <a role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1549342910460" data-original-title="" title=""><strong>¿Qué otro flujo de trabajo afecta este módulo y cuáles son sus dependencias?</strong></a>
+                </div>
+                <div class="card bg-white">
+                  <a role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1549342910461" data-original-title="" title="" aria-describedby="tooltip249042"><strong>¿Puedo confiar en un módulo desarrollado por Yaroslab?</strong></a>
+                  <div class="collapse show" role="tabpanel" id="myCollapseTab1549342910461" style="">
+                    <div class="card-body">
+                      <p class="card-text">Yaroslab es Partner certificado de Odoo y una empresa de Software con más de 15 años de experiencia creando aplicaciones para grandes empresas. Contamos con las certificaciones procesos de calidad de software, que nuestros grandes clientes exigen.</p>
+                      <p class="card-text">Trabajamos bajo nuestra metodología registrada, y única, que hemos diseñado, combinando valores "ágiles", cultura DevOps y las mejores prácticas de desarrollo de Software, para asegurar una entrega de valor en muy corto tiempo y sin bugs. Además conocemos muy bien Odoo, para asegurarnos de que todo módulo que entregamos, sea compatible y no afecte otros flujos de trabajo del ERP. Entre algunas de las prácticas que forman parte muy estricta de nuestra metodología, tenemos, TDD (desarrollo guiado por pruebas), pruebas unitarias, pruebas de integración, pruebas automatizadas, test funcionales, pruebas de rendimiento, cultura DevOps, entre otros.</p>
+                      <p class="card-text">Además, brindamos línea de atención para brindar soporte a todos nuestros productos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-white">
+                  <a role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1549342910462" data-original-title="" title="" aria-describedby="tooltip721099"><strong>¿Ofrecen alguna garantía?</strong></a>
+                  <div class="collapse show" role="tabpanel" id="myCollapseTab1549342910462" style="">
+                    <div class="card-body">
+                      <p class="card-text">Todos nuestros productos tienen una garantía dentro de los términos de la licencia, en donde atendemos sus tickets por bugs de manera ilimitada.<br></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</head>
+</html>

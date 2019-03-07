@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="account_change_by_type_view_tree" model="ir.ui.view">
+            <field name="name">account.change.by.type.tree</field>
+            <field name="model">account.change.by.type</field>
+            <field name="arch" type="xml">
+                <tree string="Cambio Cuenta" editable="bottom">
+                    <field name="journal_id"/>
+                    <field name="currency_id"/>
+                    <field name="sale_account_id"/>
+                    <field name="purchase_account_id"/>
+                    <field name="company_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
