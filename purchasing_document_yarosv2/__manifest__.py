@@ -18,6 +18,7 @@ Que su referencia del proveedor sea estructurada
         'static/src/xml/qweb_extend.xml',
     ],
     'price': 10.00,
+    'currency': 'USD',
     'installable': True,
     'license': 'AGPL-3',
     'website': 'https://www.yaroscloud.com',

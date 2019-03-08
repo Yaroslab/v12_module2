@@ -18,5 +18,6 @@
     'installable': True,
     'website': 'https://www.yaroscloud.com',
     'price': 3.00,
+    'currency': 'USD',
     'license': 'AGPL-3',
 }
